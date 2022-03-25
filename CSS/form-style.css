@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 500px;
+  display: grid;
+  justify-content: center;
+
+  background-color: grey;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  max-width: 200px;
+}
+
+fieldset {
+  max-width: 450px;
+}

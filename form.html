@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="CSS/form-style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="">
+        <label for="name"> Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="director">Director:</label>
+        <input type="text" name="director" id="director" />
+        <fieldset>
+          <legend>Duration</legend>
+          <input type="number" name="hours" id="hours" />
+          <label for="hours">Hs</label>
+          <input type="number" name="minutes" id="minutes" />
+          <label for="minutes">min</label>
+        </fieldset>
+        <label for="seen">Seen?</label>
+        <input type="checkbox" name="seen" id="seen" />
+        <button type="submit" id="addMovieBtn">Send</button>
+      </form>
+    </div>
+    <a href="index.html">Home</a>
+    <script src="JS/formscript.js"></script>
+  </body>
+</html>

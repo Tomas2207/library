@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  row-gap: 12px;
+  justify-content: start;
+
+  background-color: #f7ccac;
+  padding-top: 100px;
+}
+
+.movie {
+  background-color: #c69b7b;
+  border: 1px solid #826f66;
+  padding: 25px;
+  max-width: 200px;
+  height: 250px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px hsl(0, 0%, 44%);
+  margin-left: 15px;
+  border-left: 5px solid black;
+
+  font-size: 1.3em;
+  line-height: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 75px 0.3fr 2fr;
+}
+
+h1 {
+  background-color: #3a3845;
+  margin: 0;
+  color: white;
+
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.container {
+  background-color: #3a3845;
+  box-shadow: 0 4px 2px -2px gray;
+  color: white;
+
+  padding-left: 25px;
+  /* position: relative; */
+}
+
+.form-container {
+  width: 100%;
+  box-sizing: border-box;
+
+  background-color: inherit;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+
+  padding-bottom: 10px;
+  color: white;
+}
+
+#form {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+input {
+  max-width: 200px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+}
+
+fieldset {
+  max-width: 450px;
+}
+
+#hours,
+#minutes {
+  width: 50px;
+}
+
+select {
+  height: 30px;
+  font-size: 1em;
+}
+
+option {
+  font-size: 1em;
+}
+
+.deleteButton {
+  background-color: #826f66;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #463d38;
+  margin: 5px;
+  margin-top: 10px;
+
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.deleteButton:hover {
+  background-color: #746964;
+  cursor: pointer;
+}
+
+#addMovieBtn {
+  background-color: #f7ccac;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 2px solid #826f66;
+
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.seenBtn {
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(7, 80, 7);
+  margin: 5px;
+
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.seenBtn:hover {
+  background-color: rgb(29, 180, 29);
+  cursor: pointer;
+}
+
+.not-seenBtn {
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(107, 16, 16);
+  margin: 5px;
+
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.not-seenBtn:hover {
+  background-color: rgb(228, 28, 28);
+  cursor: pointer;
+}
