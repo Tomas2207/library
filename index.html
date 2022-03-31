@@ -13,20 +13,24 @@
       <div class="form-container" id="form">
         <label for="name"> Name:</label>
         <input type="text" id="name" name="name" />
-        <label for="director">Director:</label>
-        <input type="text" name="director" id="director" />
+        <div>
+          <label for="director">Director:</label>
+          <input type="text" name="director" id="director" />
+        </div>
         <fieldset>
           <legend>Duration</legend>
-          <input type="number" name="hours" id="hours" />
+          <input type="number" name="hours" id="hours" min="0" />
           <label for="hours">Hs</label>
-          <input type="number" name="minutes" id="minutes" />
+          <input type="number" name="minutes" id="minutes" min="0" />
           <label for="minutes">min</label>
         </fieldset>
-        <label for="watched">Have you already seen it?</label>
-        <select name="watched" id="watched">
-          <option value="seen">Yep</option>
-          <option value="not-seen">Not yet</option>
-        </select>
+        <div>
+          <label for="watched">Have you already seen it?</label>
+          <select name="watched" id="watched">
+            <option value="seen">Yep</option>
+            <option value="not-seen">Not yet</option>
+          </select>
+        </div>
         <button id="addMovieBtn">+Add Movie</button>
       </div>
     </div>
