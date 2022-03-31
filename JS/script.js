@@ -40,13 +40,14 @@ class Movie {
   }
 
   checkSeen(button) {
-    if (button.textContent === 'seen') {
+    if (this.seen === 'seen') {
       button.classList.remove('not-seenBtn');
       button.classList.add('seenBtn');
     } else {
       button.classList.remove('seenBtn');
       button.classList.add('not-seenBtn');
     }
+    resetStorage();
   }
 }
 
